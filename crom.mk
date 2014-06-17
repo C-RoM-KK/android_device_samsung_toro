@@ -5,9 +5,6 @@ TARGET_SCREEN_WIDTH := 720
 # Inherit device configuration
 $(call inherit-product, device/samsung/toro/full_toro.mk)
 
-# bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/crom/prebuilt/common/media/xhdpi/BOOTANIMATION-1280x768.zip:system/media/bootanimation.zip
 
 # Inherit CRoM common stuff.
 $(call inherit-product, vendor/crom/config/common_phone.mk)
